@@ -1,5 +1,6 @@
 const INTERECTIVE_SELECTORS = ['a', 'button', 'input', 'textarea', '[tabindex]'];
 const openButton = document.querySelector('.navigation__toggle');
+const logo = document.querySelector('.navigation__logo-link');
 const header = document.querySelector('.header');
 
 class MenuWindow {
@@ -95,7 +96,7 @@ const menuControl = () => {
     header.classList.remove('no-js');
     header.classList.toggle('is-open');
     menu.create();
-    openButton.focus();
+    logo.focus();
     document.body.classList.toggle('scroll-lock');
     document.addEventListener('keydown', closeMenu);
   };
