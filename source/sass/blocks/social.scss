@@ -1,0 +1,30 @@
+.social__list {
+  padding: 0;
+  margin: 3px -27px 0 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include vp-1023 {
+    margin: 3px -10px 0 0;
+  }
+
+  @include vp-767 {
+    margin-left: -11px;
+  }
+}
+
+.social__link {
+  padding: 13px;
+
+  @include vp-1023 {
+    padding: 11px;
+  }
+}
+
+.social__icon {
+  @include vp-1023 {
+    width: auto;
+    height: 16px;
+  }
+}

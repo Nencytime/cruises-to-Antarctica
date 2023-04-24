@@ -1,11 +1,13 @@
 .info {
   background-color: $color-alice-blue;
-  padding-top: 120px;
+  padding-top: 112px;
   padding-bottom: 145px;
+  margin-right: -15px;
 
   @include vp-1023 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 93px;
+    margin-right: 0;
   }
 
   @include vp-767 {
@@ -34,14 +36,16 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 40px;
 
   @include vp-1023 {
+    margin-right: 0;
     justify-content: flex-start;
     margin-top: -10px;
   }
 
   @include vp-767 {
-    margin-bottom: 50px;
+    margin-bottom: 12px;
   }
 
   h2 {
@@ -49,12 +53,12 @@
     font-size: 28px;
     line-height: 42px;
     padding: 0;
-    margin: 0 0 40px;
+    margin: -3px 0 24px;
 
     @include vp-1023 {
       font-size: 26px;
       line-height: 36px;
-      margin: 0 0 30px;
+      margin: 0 0 17px;
     }
 
     @include vp-767 {

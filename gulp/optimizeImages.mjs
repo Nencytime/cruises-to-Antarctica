@@ -6,6 +6,7 @@ import svgstore from 'gulp-svgstore';
 import pngQuant from 'imagemin-pngquant';
 import mozJpeg from 'imagemin-mozjpeg';
 import svgo from 'imagemin-svgo';
+// import squoosh from 'gulp-libsquoosh';
 
 const sprite = () =>
   gulp
@@ -39,6 +40,7 @@ const optimizeSvg = () =>
 const optimizeJpg = () =>
   gulp
       .src('build/img/**/*.{jpg,jpeg}')
+      // .pipe(squoosh())
       .pipe(imagemin([mozJpeg({quality: 90, progressive: true})]))
       .pipe(gulp.dest('build/img'));
 
