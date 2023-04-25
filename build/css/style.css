@@ -694,6 +694,8 @@ button,
     padding-top: 30px;
     background-image: url("../img/background/header-background-tablet.jpeg");
     min-height: 638px;
+    -webkit-filter: none;
+            filter: none;
   }
 }
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
@@ -978,8 +980,7 @@ body .header.is-open {
 @media (max-width: 767px) {
   .contacts {
     padding-top: 37px;
-    padding-bottom: 25px;
-    margin-bottom: 37px;
+    padding-bottom: 47px;
   }
 }
 
