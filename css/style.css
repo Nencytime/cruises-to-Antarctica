@@ -1381,6 +1381,8 @@ body .header.is-open {
     padding-top: 30px;
     background-image: url("../img/background/header-background-tablet.jpeg");
     min-height: 638px;
+    -webkit-filter: none;
+    filter: none;
   }
 
   .header__container {
@@ -1748,8 +1750,7 @@ body .header.is-open {
 
   .contacts {
     padding-top: 37px;
-    padding-bottom: 25px;
-    margin-bottom: 37px;
+    padding-bottom: 47px;
   }
 
   .contacts__container {
