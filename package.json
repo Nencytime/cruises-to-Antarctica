@@ -1,5 +1,5 @@
 {
-  "name": "cruises-to-Antarctica",
+  "name": "Liga-A-accelerator-template",
   "version": "2.0.0",
   "type": "module",
   "description": "Стартовый шаблон сборки Лиги А",
@@ -11,8 +11,6 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --customSyntax postcss-scss",
-    "lint": "npm run editorconfig && npm run stylelint",
-    "eslint": "eslint source/js/",
     "test": "npm run editorconfig & npm run stylelint & eslint source/js/",
     "build": "gulp build",
     "dev": "gulp dev",
