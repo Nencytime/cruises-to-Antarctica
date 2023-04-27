@@ -4,22 +4,24 @@ const createMap = () => {
   ymaps.ready(function () {
     const myMap = new ymaps.Map('map', {
       center: [59.938631, 30.323037],
-      zoom: 16,
+      zoom: 15.65,
     }, {
       searchControlProvider: 'yandex#search',
     });
 
-    const myPlacemark = new ymaps.Placemark([59.937640428077046, 30.32269367724605], {}, {
+    const myPlacemark = new ymaps.Placemark([59.93806382941526, 30.322137379110007], {}, {
       iconLayout: 'default#image',
       iconImageHref: './img/sprite/map-pin.svg',
       iconImageSize: [18, 22],
-      // iconImageOffset: [18, 22],
+      iconImageOffset: [9, 22],
     });
 
     myMap.geoObjects
         .add(myPlacemark);
   });
 };
+
+export {createMap};
 
 /* const ymaps = window.ymaps;
 
@@ -39,8 +41,6 @@ function createMap() {
     myMap.setCenter(coord);
   });
 } */
-
-export {createMap};
 
 /* const yandexMapsScript = document.createElement('script');
 const key = '6b492866-f739-4d69-9dbc-9ff50d70ea08';
