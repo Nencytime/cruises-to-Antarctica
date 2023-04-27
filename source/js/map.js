@@ -21,6 +21,25 @@ const createMap = () => {
   });
 };
 
+/* const ymaps = window.ymaps;
+
+setTimeout(function () {
+  let elem = document.createElement('script');
+  elem.type = 'text/javascript';
+  elem.src = '//api-maps.yandex.ru/2.0/?load=package.standard&lang=ru-RU&onload=getYaMap';
+  document.getElementsByTagName('body')[0].appendChild(elem);
+}, 2000);
+
+function createMap() {
+  let myMap = new ymaps.Map('map', {center: [30.325, 59.935], zoom: 13});
+  ymaps.geocode('Санкт-Петербург, ул. Невский проспект, 28').then(function (res) {
+    let coord = res.geoObjects.get(0).geometry.getCoordinates();
+    let myPlacemark = new ymaps.Placemark(coord);
+    myMap.geoObjects.add(myPlacemark);
+    myMap.setCenter(coord);
+  });
+} */
+
 export {createMap};
 
 /* const yandexMapsScript = document.createElement('script');
