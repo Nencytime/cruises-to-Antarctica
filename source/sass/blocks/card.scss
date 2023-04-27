@@ -1,8 +1,7 @@
 .card {
   display: none;
   position: absolute;
-  height: max-content;
-  min-height: 386px;
+  height: 386px;
   top: 0;
   bottom: 0;
   left: 0;
@@ -12,6 +11,7 @@
   color: $color-alice-blue;
   padding: 28px 25px;
   margin-bottom: 50px;
+  overflow: auto;
 
   @include vp-1023 {
     padding: 30px 35px 35px;
@@ -29,7 +29,7 @@
     line-height: 27px;
   }
 
-  .card__link {
+  .card__button {
     display: flex;
     justify-content: center;
     color: $color-tangaroa;

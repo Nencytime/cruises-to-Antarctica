@@ -34,8 +34,9 @@
   background-color: rgba($color-tangaroa, 0.3);
   background-image: url("../img/background/map.jpeg");
   background-repeat: no-repeat;
-  min-height: 306px;
+  height: 306px;
   background-size: cover;
+  align-self: center;
 
   @include retina {
     background-image: url("../img/background/map@2x.jpeg");

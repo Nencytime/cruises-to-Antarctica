@@ -61,7 +61,8 @@
   position: relative;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &--focused {
     .card {
       display: block;
     }
@@ -75,6 +76,7 @@
     position: absolute;
     bottom: 31px;
     left: 31px;
+    right: 15px;
     color: $color-alice-blue;
     padding: 0;
     margin: -8px 0;
