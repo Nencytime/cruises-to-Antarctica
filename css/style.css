@@ -871,7 +871,7 @@ body .header.is-open {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 60px;
+  margin-left: 52px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
