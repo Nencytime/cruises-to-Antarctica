@@ -1,12 +1,12 @@
 .catalog {
   padding-top: 85px;
   padding-bottom: 120px;
-  margin-left: 15px;
+  //margin-left: 15px;
 
   @include vp-1023 {
     padding-top: 90px;
     padding-bottom: 100px;
-    margin-left: 0;
+    //margin-left: 0;
   }
 
   @include vp-767 {
@@ -39,10 +39,15 @@
 .catalog__list {
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin: 0 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+
+  @include vp-1279 {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 -25px;
+  }
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 1fr);
@@ -59,6 +64,11 @@
 
 .catalog__item {
   position: relative;
+  width: 260px;
+
+  @include vp-1023 {
+    width: auto;
+  }
 
   &:hover,
   &:focus,
@@ -99,6 +109,7 @@
 
 .catalog__img {
   position: relative;
+  background-color: $color-tangaroa;
 
   &::after {
     position: absolute;
@@ -111,8 +122,17 @@
   }
 
   img {
+    width: 260px;
     height: 386px;
-    width: 100%;
+    margin: 0 auto;
     object-fit: cover;
+
+    @include vp-1023 {
+      min-width: 309px;
+    }
+
+    @include vp-767 {
+      min-width: 270px;
+    }
   }
 }

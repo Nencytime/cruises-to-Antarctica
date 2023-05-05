@@ -2,12 +2,12 @@
   background-color: $color-alice-blue;
   padding-top: 112px;
   padding-bottom: 145px;
-  margin-right: -15px;
+  //margin-right: -15px;
 
   @include vp-1023 {
     padding-top: 100px;
     padding-bottom: 93px;
-    margin-right: 0;
+    //margin-right: 0;
   }
 
   @include vp-767 {
