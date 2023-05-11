@@ -605,7 +605,7 @@ button,
 .card {
   display: none;
   position: absolute;
-  height: 386px;
+  height: 100%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -616,6 +616,13 @@ button,
   padding: 28px 25px;
   margin-bottom: 50px;
   overflow: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 @media (max-width: 1023px) {
   .card {
@@ -638,6 +645,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1415,7 +1425,7 @@ body .header.is-open {
   .catalog__list {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 -25px;
+    margin: 0 -60px;
   }
 }
 @media (max-width: 1023px) {
@@ -1427,13 +1437,8 @@ body .header.is-open {
 }
 @media (max-width: 767px) {
   .catalog__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     margin: 0 10px;
   }
@@ -1441,7 +1446,6 @@ body .header.is-open {
 
 .catalog__item {
   position: relative;
-  width: 260px;
 }
 @media (max-width: 1023px) {
   .catalog__item {
@@ -1449,7 +1453,9 @@ body .header.is-open {
   }
 }
 .catalog__item:hover .card, .catalog__item:focus .card, .catalog__item--focused .card {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .catalog__item:hover .catalog__title, .catalog__item:focus .catalog__title, .catalog__item--focused .catalog__title {
   display: none;
@@ -1482,7 +1488,6 @@ body .header.is-open {
 
 .catalog__img {
   position: relative;
-  background-color: #011c40;
 }
 .catalog__img::after {
   position: absolute;
@@ -1496,8 +1501,10 @@ body .header.is-open {
   background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011c40 100%);
 }
 .catalog__img img {
-  width: 260px;
-  height: 386px;
+  width: 100%;
+  min-height: 386px;
+  min-width: 260px;
+  height: 100%;
   margin: 0 auto;
   -o-object-fit: cover;
      object-fit: cover;

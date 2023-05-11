@@ -46,7 +46,7 @@
 
   @include vp-1279 {
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 -25px;
+    margin: 0 -60px;
   }
 
   @include vp-1023 {
@@ -55,8 +55,7 @@
   }
 
   @include vp-767 {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 30px;
     margin: 0 10px;
   }
@@ -64,7 +63,6 @@
 
 .catalog__item {
   position: relative;
-  width: 260px;
 
   @include vp-1023 {
     width: auto;
@@ -74,7 +72,7 @@
   &:focus,
   &--focused {
     .card {
-      display: block;
+      display: flex;
     }
 
     .catalog__title {
@@ -109,7 +107,6 @@
 
 .catalog__img {
   position: relative;
-  background-color: $color-tangaroa;
 
   &::after {
     position: absolute;
@@ -122,8 +119,10 @@
   }
 
   img {
-    width: 260px;
-    height: 386px;
+    width: 100%;
+    min-height: 386px;
+    min-width: 260px;
+    height: 100%;
     margin: 0 auto;
     object-fit: cover;
 
